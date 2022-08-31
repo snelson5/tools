@@ -1,0 +1,8 @@
+# Copyright Amazon.com, Inc. or its affiliates. All Rights Reserved.
+# SPDX-License-Identifier: MIT-0
+
+# Update hostname with your AWS Cloud9 EC2 instance ID
+Host cloud9
+    IdentityFile C:\Users\XXXXX\.ssh\id_rsa
+    User ec2-user
+    ProxyCommand powershell.exe -c "C:\Users\XXXXX\.ssh\ssh-proxy.ps1 %p"
